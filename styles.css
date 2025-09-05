@@ -1,0 +1,172 @@
+:root {
+  --primary-color: #cebebe;
+  --secondary-color: #6d2e46;
+  --color-bg: #c997ad;
+  --color-text: #EEABC4;
+  --color-text-secondary: #191716;
+  --call-to-action: #a26769;
+  --content-margin-x: .75rem;
+  --content-margin-y: .75rem;
+}
+
+.oregano-regular {
+  font-family: "Oregano", cursive;
+  font-weight: 400;
+  font-style: normal;
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+
+header {
+  background-color: var(--call-to-action);
+  color: white;
+  font-family: "Shantell Sans", cursive;
+  padding: 20px;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  font-size: 3vw;
+}
+
+nav {
+  display: flex;
+  flex-wrap: wrap;
+  font-size: 30px;
+  text-align: center;
+  background-color: var(--secondary-color);
+}
+
+ul {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  gap: 20px;}
+
+li {
+    text-align: center;
+    list-style: none;
+    margin: 1vh;
+}
+
+a {
+  color: var(--primary-color);
+  text-decoration: none;
+  font-size: 2vw;
+  font-family: "Platypi", cursive;
+  padding: 12px 20px;
+}
+
+
+a:hover {
+  background-color: #ddd;
+  color: black;
+}
+
+
+.hero-img {
+background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(2.jpg);
+height: 500px;
+background-position: center;
+background-repeat: no-repeat;
+background-size: cover;
+position: relative;
+}
+
+.hero-text {
+  transform: translate(-50%, -50%);
+  color: var(--color-text);
+  text-align: center;
+  position: relative;
+  top: 30%; 
+  left: 50%;
+  font-family: "Shantell+Sans", cursive;
+  font-size: 5vw;
+}
+
+.hero-button {
+  position: relative;
+  top: 30%;
+  left: 40%;
+  font-size: 4vw; 
+  border-radius: 10px;
+  outline: 0;
+  
+  padding: 10px 25px;
+  color: var(--primary-color);
+  background-color: var(--secondary-color);
+  text-align: center;
+  cursor: pointer;
+}
+
+.hero-button:hover {
+  background-color: #555;
+  color: white;
+}
+
+#aboutUs {
+  padding: 50px;
+  text-align: center;
+  background-color: var(--color-bg);
+  color: var(--color-text-secondary);
+  font-family: "Shantell+Sans", cursive;
+  font-size: 3vw;
+}
+
+.pawsServices {
+  display: grid;
+  grid-template-columns: 1fr 2fr 1fr;
+  justify-content: center;
+  gap: 10px;
+}
+
+h1 {
+  font-family: "Shantell+Sans";
+  font-size: 6vw;
+  color: var(--secondary-color)
+}
+
+span.material-symbols-outlined {
+  font-size: 8vw;
+  color: var(--secondary-color);
+  justify-self:center
+  }
+
+.cards {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  grid-gap: 20px;
+  margin: 5px auto;
+}
+
+.card {
+  border: 1px solid #999999;
+  border-radius: 10px;
+  display: grid;
+  grid-template-columns: 2fr;
+  grid-template-rows: auto 1fr; 
+  box-shadow: 2px 2px 12px rgba(0, 0, 0, 0.1);
+  transition: transform 0.2s;
+}
+
+.card img {
+  width: 100%;
+  height: auto;
+}
+
+.card h4 {
+  margin: 0;
+  padding: 0.5rem;
+}
+
+.card .content {
+  padding: 0.5rem;
+  color: var(--color-text-secondary);
+  font-family: "Oregano", cursive;
+  font-weight: 400;
+  text-align: center;
+  }
