@@ -5,8 +5,8 @@
   --color-text: #EEABC4;
   --color-text-secondary: #191716;
   --call-to-action: #a26769;
-  --content-margin-x: .75rem;
-  --content-margin-y: .75rem;
+
+ 
 }
 
 .oregano-regular {
@@ -34,9 +34,6 @@ header {
 }
 
 nav {
-  display: flex;
-  flex-wrap: wrap;
-  font-size: 30px;
   text-align: center;
   background-color: var(--secondary-color);
 }
@@ -50,16 +47,15 @@ ul {
 li {
     text-align: center;
     list-style: none;
-    margin: 1vh;
+    margin: 20px;
 }
 
 a {
   color: var(--primary-color);
   text-decoration: none;
-  font-size: 2vw;
+  font-size: 2vh;
   font-family: "Platypi", cursive;
-  padding: 12px 20px;
-  border-radius: 4px;
+   padding: 12px 20px;
 }
 
 a:hover, a:focus {
@@ -68,9 +64,15 @@ a:hover, a:focus {
   outline: 2px solid var(--primary-color);
 }
 
+p {
+  font-family: "Oregano", cursive;
+  color: var(--color-text-secondary);
+  font-size: 2vw;
+}
+
 .hero-img {
 background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(2.jpg);
-height: 500px;
+height: 100vh;
 background-position: center;
 background-repeat: no-repeat;
 background-size: cover;
@@ -85,14 +87,14 @@ position: relative;
   top: 30%;
   left: 50%;
   font-family: "Shantell+Sans", cursive;
-  font-size: 5vw;
+  font-weight: bold;
 }
 
 .hero-button {
   position: relative;
   top: 30%;
   left: 40%;
-  font-size: 4vw;
+  font-size: 3vw;
   border-radius: 10px;
   outline: 0;
   border: none;
@@ -128,7 +130,8 @@ position: relative;
 h1 {
   font-family: "Shantell+Sans";
   font-size: 6vw;
-  color: var(--secondary-color)
+  color: var(--secondary-color);
+  text-align: center;
 }
 
 span.material-symbols-outlined {
@@ -145,7 +148,7 @@ span.material-symbols-outlined {
 }
 
 .card {
-  border: 1px solid #999999;
+  border: 5px solid var(--secondary-color);
   border-radius: 10px;
   display: flex;
   flex-direction: column;
@@ -192,6 +195,7 @@ span.material-symbols-outlined {
 .gridContainer {
     display: grid;
     padding: 20px;
+    margin: 20px 70px;
 }
 
 form {
@@ -219,6 +223,8 @@ form button {
     color: white;
     cursor: pointer;
     border: none;
+    width: 50%;
+    justify-self: center;
 }
 
 form button:hover, form button:focus {
@@ -228,6 +234,7 @@ form button:hover, form button:focus {
 
 .sr-only {
   position: absolute;
+  color:#555;
   width: 1px;
   height: 1px;
   padding: 0;
@@ -238,7 +245,7 @@ form button:hover, form button:focus {
   border: 0;
 }
 
-footer {
+footer { 
     background-color: var(--secondary-color);
     color: white;
     text-align: center;
@@ -259,9 +266,6 @@ footer {
     }
     .hero-button {
         font-size: 5vw;
-    }
-    h1 {
-        font-size: 8vw;
     }
 }
 
